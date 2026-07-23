@@ -1,0 +1,6 @@
+2026-07-14 21:24:00 INFO  com.cognizant.slf4j.Slf4jLoggingApplication - Starting Slf4jLoggingApplication using Java 23.0.2 with PID 19972 (C:\Users\kbhas\OneDrive\Pictures\Documents\Desktop\java deepskilling solutions\JUnit,Mockito and SL4J\SLF4JLogging\target\classes started by kbhas in C:\Users\kbhas\OneDrive\Pictures\Documents\Desktop\java deepskilling solutions\JUnit,Mockito and SL4J\SLF4JLogging)
+2026-07-14 21:24:00 INFO  com.cognizant.slf4j.Slf4jLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 21:24:01 INFO  com.cognizant.slf4j.Slf4jLoggingApplication - Started Slf4jLoggingApplication in 1.087 seconds (process running for 1.736)
+2026-07-14 21:24:01 INFO  com.cognizant.slf4j.service.LoggingExample - User Name: Deepthi, User Id: 101
+2026-07-14 21:24:01 WARN  com.cognizant.slf4j.service.LoggingExample - Welcome Deepthi!
+2026-07-14 21:24:01 ERROR com.cognizant.slf4j.service.LoggingExample - Unable to process request for user Deepthi

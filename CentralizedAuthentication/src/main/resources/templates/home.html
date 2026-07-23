@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Centralized Authentication</title>
+</head>
+<body>
+
+<h2>Centralized Authentication using Google OAuth2</h2>
+
+<div th:if="${email != null}">
+    <h3>Welcome <span th:text="${name}"></span></h3>
+    <p>Email: <span th:text="${email}"></span></p>
+</div>
+
+<div th:if="${email == null}">
+    <a href="/oauth2/authorization/google">
+        Login with Google
+    </a>
+</div>
+
+</body>
+</html>

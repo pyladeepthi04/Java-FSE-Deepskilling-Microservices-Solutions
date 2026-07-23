@@ -1,0 +1,28 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: employee-service
+              uri: lb://employee-service
+              predicates:
+                - Path=/employee/**
+              filters:
+                - name: CircuitBreaker
+                  args:
+                    name: employeeCircuitBreaker
+                    fallbackUri: forward:/fallback
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      employeeCircuitBreaker:
+        slidingWindowSize: 10
+        failureRateThreshold: 50
